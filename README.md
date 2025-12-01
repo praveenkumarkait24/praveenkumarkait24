@@ -1,5 +1,6 @@
-<!-- Wave Banner -->
-<img src="https://raw.githubusercontent.com/adeolanwa/waves/main/wave-dark.svg" width="100%">
+<!-- INLINE WAVE BANNER -->
+
+
 
 <div align="center">
 
@@ -83,21 +84,39 @@ I enjoy solving complex problems, optimizing systems, and creating projects that
 
 ---
 
-## 🟩 LeetCode Stats (Live)
+
 
 <div align="center">
-    <img src="./.leetfetch/leetcode.svg" />
+
+
+
+<img src="https://leetcard.jacoblin.cool/praveenkumarka_it24?theme=dark&ext=heatmap" />
+<br>
+<br>
+<br>
+
+
+   <a href="https://leetcode.com/u/praveenkumarka_it24/">LeetCode</a>
 </div>
+
+
+<br>
+
+
+
+
+<br>
+
 
 ---
 
-## 🐍 Snake Contribution Animation
+<br>
+<br>
+<br>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg"/>
 </div>
 
 ---
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/adeolanwa/waves/main/wave-dark.svg" width="100%">
-</div>
+
