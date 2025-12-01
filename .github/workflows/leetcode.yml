@@ -1,4 +1,4 @@
-name: Generate LeetCode Stats
+name: Update LeetCode Stats
 
 on:
   schedule:
@@ -6,30 +6,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.10
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
-      - name: Install leetfetch
-        run: pip install leetfetch
+      - name: Run fetch script
+        run: python .leetfetch/fetch_leetcode.py
 
-      - name: Generate LeetCode Stats
-        run: |
-          mkdir -p .leetfetch
-          leetfetch --config .leetfetch/config.json --output .leetfetch/leetcode.svg
+      - name: Generate SVG
+        run: python .leetfetch/generate_svg.py
 
-      - name: Commit and Push results
+      - name: Push results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .leetfetch/leetcode.svg
-          git commit -m "Updated LeetCode Stats" || echo "No changes to commit"
+          git add .leetfetch/leetcode.json .leetfetch/leetcode.svg
+          git commit -m "Updated LeetCode Stats" || echo "No changes"
           git push
