@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Install dependencies
+        run: pip install requests
+
       - name: Run fetch script
         run: python .leetfetch/fetch_leetcode.py
 
