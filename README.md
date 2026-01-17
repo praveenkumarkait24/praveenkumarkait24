@@ -7,9 +7,7 @@
 # 🌟 Praveen Kumar K A  
 ### Full Stack Developer • AI Explorer • Problem Solver 🚀
 
-<img src="https://avatars.githubusercontent.com/u/202728704?v=4" width="120" style="border-radius: 50%;" />
 
-</div>
 
 ---
 
